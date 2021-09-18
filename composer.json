@@ -1,5 +1,5 @@
 {
-    "name": "kassie/calendar",
+    "name": "mettrick/calendar",
     "description": "Calendar plugin for SeAT.",
     "type": "seat-plugin",
     "autoload": {
@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Seat\\Kassie\\Calendar\\CalendarServiceProvider"
+                "Seat\\Mettrick\\Calendar\\CalendarServiceProvider"
             ]
         }
     }
