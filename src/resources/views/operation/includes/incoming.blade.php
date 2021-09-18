@@ -12,7 +12,7 @@
                     <th>{{ trans('calendar::seat.title') }}</th>
                     <th class="hidden-xs">{{ trans('calendar::seat.tags') }}</th>
                     <th>{{ trans('calendar::seat.importance') }}</th>
-                    <th>{{ trans('calendar::seat.starts_in') }}</th>
+                    <th>{{ trans('calendar::seat.starts_at') }}</th>
                     <th class="hidden-xs">{{ trans('calendar::seat.duration') }}</th>
                     <th class="hidden-xs">{{ trans('calendar::seat.fleet_commander') }}</th>
                     <th>{{ trans('calendar::seat.staging') }}</th>
