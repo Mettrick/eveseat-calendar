@@ -1,11 +1,11 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Helpers;
+namespace Seat\Mettrick\Calendar\Helpers;
 
 /**
  * Class Helper.
  *
- * @package Seat\Kassie\Calendar\Helpers
+ * @package Seat\Mettrick\Calendar\Helpers
  */
 class Helper
 {
@@ -57,9 +57,9 @@ class Helper
         $fields[trans('calendar::seat.importance')] =
             self::ImportanceAsEmoji(
                 $op->importance,
-                setting('kassie.calendar.slack_emoji_importance_full', true),
-                setting('kassie.calendar.slack_emoji_importance_half', true),
-                setting('kassie.calendar.slack_emoji_importance_empty', true));
+                setting('mettrick.calendar.slack_emoji_importance_full', true),
+                setting('mettrick.calendar.slack_emoji_importance_half', true),
+                setting('mettrick.calendar.slack_emoji_importance_empty', true));
 
         $fields[trans('calendar::seat.fleet_commander')] = $op->fc ? $op->fc : trans('calendar::seat.unknown');
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
@@ -9,17 +9,17 @@ use Seat\Eseye\Containers\EsiAuthentication;
 use Seat\Eseye\Exceptions\EsiScopeAccessDeniedException;
 use Seat\Eseye\Exceptions\RequestFailedException;
 use Seat\Eveapi\Models\RefreshToken;
-use Seat\Kassie\Calendar\Models\Pap;
+use Seat\Mettrick\Calendar\Models\Pap;
 use Seat\Notifications\Models\Integration;
 use Seat\Web\Http\Controllers\Controller;
-use Seat\Kassie\Calendar\Models\Operation;
-use Seat\Kassie\Calendar\Models\Attendee;
-use Seat\Kassie\Calendar\Models\Tag;
+use Seat\Mettrick\Calendar\Models\Operation;
+use Seat\Mettrick\Calendar\Models\Attendee;
+use Seat\Mettrick\Calendar\Models\Tag;
 use Seat\Web\Models\Acl\Role;
 
 /**
  * Class OperationController
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class OperationController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Models;
+namespace Seat\Mettrick\Calendar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -14,7 +14,7 @@ use Seat\Web\Models\User;
 
 /**
  * Class Operation.
- * @package Seat\Kassie\Calendar\Models
+ * @package Seat\Mettrick\Calendar\Models
  */
 class Operation extends Model
 {

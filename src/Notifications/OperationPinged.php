@@ -1,6 +1,6 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Notifications;
+namespace Seat\Mettrick\Calendar\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
@@ -9,7 +9,7 @@ use Illuminate\Notifications\Messages\SlackMessage;
 /**
  * Class OperationPinged.
  *
- * @package Seat\Kassie\Calendar\Notifications
+ * @package Seat\Mettrick\Calendar\Notifications
  */
 class OperationPinged extends Notification
 {

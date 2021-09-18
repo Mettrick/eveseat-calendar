@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     {{-- Operation slack --}}
-                    @if(setting('kassie.calendar.slack_integration', true) == true)
+                    @if(setting('mettrick.calendar.slack_integration', true) == true)
                         <div class="form-group row">
                             <label for="update-operation-channel" class="col-sm-3 col-form-label">
                                 <i class="fas fa-bell"></i>&nbsp;

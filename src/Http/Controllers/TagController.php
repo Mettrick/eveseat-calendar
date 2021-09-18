@@ -1,15 +1,15 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Seat\Web\Http\Controllers\Controller;
-use Seat\Kassie\Calendar\Models\Tag;
+use Seat\Mettrick\Calendar\Models\Tag;
 
 /**
  * Class TagController.
  *
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class TagController extends Controller
 {

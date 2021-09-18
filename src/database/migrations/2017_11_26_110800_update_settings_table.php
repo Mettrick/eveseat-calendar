@@ -22,35 +22,35 @@ class UpdateSettingsTable extends Migration
 
                 if (Schema::hasColumn('calendar_settings', 'slack_integration')) {
                     setting([
-                        'kassie.calendar.slack_integration',
+                        'mettrick.calendar.slack_integration',
                         $settings->slack_integration,
                     ], true);
                 }
 
                 if (Schema::hasColumn('calendar_settings', 'slack_webhook')) {
                     setting([
-                        'kassie.calendar.slack_webhook',
+                        'mettrick.calendar.slack_webhook',
                         $settings->slack_webhook,
                     ], true);
                 }
 
                 if (Schema::hasColumn('calendar_settings', 'slack_emoji_importance_full')) {
                     setting([
-                        'kassie.calendar.slack_emoji_importance_full',
+                        'mettrick.calendar.slack_emoji_importance_full',
                         $settings->slack_emoji_importance_full,
                     ], true);
                 }
 
                 if (Schema::hasColumn('calendar_settings', 'slack_emoji_importance_half')) {
                     setting([
-                        'kassie.calendar.slack_emoji_importance_half',
+                        'mettrick.calendar.slack_emoji_importance_half',
                         $settings->slack_emoji_importance_half,
                     ], true);
                 }
 
                 if (Schema::hasColumn('calendar_settings', 'slack_emoji_importance_empty')) {
                     setting([
-                        'kassie.calendar.slack_emoji_importance_empty',
+                        'mettrick.calendar.slack_emoji_importance_empty',
                         $settings->slack_emoji_importance_empty,
                     ], true);
                 }
@@ -112,17 +112,17 @@ class UpdateSettingsTable extends Migration
             });
         }
 
-        $settings['slack_integration'] = setting('kassie.calendar.slack_integration', true);
+        $settings['slack_integration'] = setting('mettrick.calendar.slack_integration', true);
         if (is_null($settings['slack_integration']))
             $settings['slack_integration'] = 0;
 
-        $settings['slack_webhook'] = setting('kassie.calendar.slack_webhook', true) ?: '';
+        $settings['slack_webhook'] = setting('mettrick.calendar.slack_webhook', true) ?: '';
 
-        $settings['slack_emoji_importance_full'] = setting('kassie.calendar.slack_emoji_importance_full', true) ?: '';
+        $settings['slack_emoji_importance_full'] = setting('mettrick.calendar.slack_emoji_importance_full', true) ?: '';
 
-        $settings['slack_emoji_importance_half'] = setting('kassie.calendar.slack_emoji_importance_half', true) ?: '';
+        $settings['slack_emoji_importance_half'] = setting('mettrick.calendar.slack_emoji_importance_half', true) ?: '';
 
-        $settings['slack_emoji_importance_empty'] = setting('kassie.calendar.slack_emoji_importance_empty', true) ?: '';
+        $settings['slack_emoji_importance_empty'] = setting('mettrick.calendar.slack_emoji_importance_empty', true) ?: '';
 
         DB::table('calendar_settings')->insert($settings);
     }

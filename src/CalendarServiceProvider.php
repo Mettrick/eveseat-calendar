@@ -1,16 +1,16 @@
 <?php
 
-namespace Seat\Kassie\Calendar;
+namespace Seat\Mettrick\Calendar;
 
 use Illuminate\Console\Scheduling\Schedule;
-use Seat\Kassie\Calendar\Observers\OperationObserver;
-use Seat\Kassie\Calendar\Models\Operation;
-use Seat\Kassie\Calendar\Commands\RemindOperation;
+use Seat\Mettrick\Calendar\Observers\OperationObserver;
+use Seat\Mettrick\Calendar\Models\Operation;
+use Seat\Mettrick\Calendar\Commands\RemindOperation;
 use Seat\Services\AbstractSeatPlugin;
 
 /**
  * Class CalendarServiceProvider.
- * @package Seat\Kassie\Calendar
+ * @package Seat\Mettrick\Calendar
  */
 class CalendarServiceProvider extends AbstractSeatPlugin
 {
@@ -105,7 +105,7 @@ class CalendarServiceProvider extends AbstractSeatPlugin
      */
     public function getPackageRepositoryUrl(): string
     {
-        return 'https://github.com/BenHUET/eveseat-calendar';
+        return 'https://github.com/Mettrick/eveseat-calendar';
     }
 
     /**
@@ -129,6 +129,6 @@ class CalendarServiceProvider extends AbstractSeatPlugin
      */
     public function getPackagistVendorName(): string
     {
-        return 'kassie';
+        return 'mettrick';
     }
 }

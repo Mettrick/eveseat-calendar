@@ -1,13 +1,13 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Models;
+namespace Seat\Mettrick\Calendar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Tag.
  *
- * @package Seat\Kassie\Calendar\Models
+ * @package Seat\Mettrick\Calendar\Models
  */
 class Tag extends Model
 {

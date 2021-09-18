@@ -1,17 +1,17 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Commands;
+namespace Seat\Mettrick\Calendar\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Notification;
 use Carbon\Carbon;
-use Seat\Kassie\Calendar\Models\Operation;
-use Seat\Kassie\Calendar\Notifications\OperationPinged;
+use Seat\Mettrick\Calendar\Models\Operation;
+use Seat\Mettrick\Calendar\Notifications\OperationPinged;
 
 /**
  * Class RemindOperation.
  *
- * @package Seat\Kassie\Calendar\Commands
+ * @package Seat\Mettrick\Calendar\Commands
  */
 class RemindOperation extends Command
 {
@@ -35,7 +35,7 @@ class RemindOperation extends Command
      */
     public function handle()
     {
-        if (setting('kassie.calendar.slack_integration', true) == 1) {
+        if (setting('mettrick.calendar.slack_integration', true) == 1) {
             $ops = Operation::all()->take(-50);
             $now = Carbon::now('UTC');
 

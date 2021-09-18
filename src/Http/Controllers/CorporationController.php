@@ -5,17 +5,17 @@
  * Time: 11:08
  */
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Seat\Eveapi\Models\Corporation\CorporationInfo;
-use Seat\Kassie\Calendar\Models\Pap;
+use Seat\Mettrick\Calendar\Models\Pap;
 use Seat\Web\Http\Controllers\Controller;
 
 /**
  * Class CorporationController.
  *
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class CorporationController extends Controller
 {
@@ -146,9 +146,9 @@ class CorporationController extends Controller
         $grouped = request()->query('grouped') ?: false;
 
         $paps = Pap::select('ci.character_id', 'cto.operation_id', 'analytics', 'value')
-                   ->join('character_infos as ci', 'kassie_calendar_paps.character_id', 'ci.character_id')
+                   ->join('character_infos as ci', 'mettrick_calendar_paps.character_id', 'ci.character_id')
                    ->join('character_affiliations as ca', 'ci.character_id', 'ca.character_id')
-                   ->join('calendar_tag_operation as cto', 'cto.operation_id', 'kassie_calendar_paps.operation_id')
+                   ->join('calendar_tag_operation as cto', 'cto.operation_id', 'mettrick_calendar_paps.operation_id')
                    ->join('calendar_tags as ct', 'ct.id', 'cto.tag_id')
                    ->where('year', $year)
                    ->where('month', $month)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Seat\Kassie\Calendar\database\seeds;
+namespace Seat\Mettrick\Calendar\database\seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

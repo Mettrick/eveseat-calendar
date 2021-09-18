@@ -1,36 +1,36 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Observers;
+namespace Seat\Mettrick\Calendar\Observers;
 
 use Illuminate\Support\Facades\Notification;
-use Seat\Kassie\Calendar\Models\Operation;
-use Seat\Kassie\Calendar\Notifications\OperationPosted;
-use Seat\Kassie\Calendar\Notifications\OperationUpdated;
-use Seat\Kassie\Calendar\Notifications\OperationCancelled;
-use Seat\Kassie\Calendar\Notifications\OperationActivated;
+use Seat\Mettrick\Calendar\Models\Operation;
+use Seat\Mettrick\Calendar\Notifications\OperationPosted;
+use Seat\Mettrick\Calendar\Notifications\OperationUpdated;
+use Seat\Mettrick\Calendar\Notifications\OperationCancelled;
+use Seat\Mettrick\Calendar\Notifications\OperationActivated;
 
 /**
  * Class OperationObserver.
  *
- * @package Seat\Kassie\Calendar\Observers
+ * @package Seat\Mettrick\Calendar\Observers
  */
 class OperationObserver
 {
     /**
-     * @param \Seat\Kassie\Calendar\Models\Operation $operation
+     * @param \Seat\Mettrick\Calendar\Models\Operation $operation
      */
     public function created(Operation $operation)
     {
-        if (setting('kassie.calendar.slack_integration', true) == 1 && !is_null($operation->integration))
+        if (setting('mettrick.calendar.slack_integration', true) == 1 && !is_null($operation->integration))
             Notification::send($operation, new OperationPosted());
     }
 
     /**
-     * @param \Seat\Kassie\Calendar\Models\Operation $new_operation
+     * @param \Seat\Mettrick\Calendar\Models\Operation $new_operation
      */
     public function updating(Operation $new_operation)
     {
-        if (setting('kassie.calendar.slack_integration', true) == 1 && !is_null($new_operation->integration)) {
+        if (setting('mettrick.calendar.slack_integration', true) == 1 && !is_null($new_operation->integration)) {
             $old_operation = Operation::find($new_operation->id);
             if ($old_operation->is_cancelled != $new_operation->is_cancelled) {
                 if ($new_operation->is_cancelled == true)

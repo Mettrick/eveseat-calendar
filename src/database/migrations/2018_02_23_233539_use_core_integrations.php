@@ -11,7 +11,7 @@ class UseCoreIntegrations extends Migration {
     public function up()
     {
 
-        $integration = setting('kassie.calendar.slack_webhook', true);
+        $integration = setting('mettrick.calendar.slack_webhook', true);
 
         if (! is_null($integration)) {
             DB::table('integrations')->insert([
@@ -20,7 +20,7 @@ class UseCoreIntegrations extends Migration {
                 'settings' => json_encode((object) ['url' => $integration]),
             ]);
 
-            DB::table('global_settings')->where('name', 'kassie.calendar.slack_webhook')->delete();
+            DB::table('global_settings')->where('name', 'mettrick.calendar.slack_webhook')->delete();
         }
 
         Schema::table('calendar_operations', function(Blueprint $table){
@@ -35,7 +35,7 @@ class UseCoreIntegrations extends Migration {
         $integration = DB::table('integrations')->where('name', 'SeAT Calendar')->where('type', 'slack')->first();
 
         if (! is_null($integration)) {
-            setting(['kassie.calendar.slack_webhook' => json_decode($integration->settings)->url], true);
+            setting(['mettrick.calendar.slack_webhook' => json_decode($integration->settings)->url], true);
         }
 
         Schema::table('calendar_operations', function(Blueprint $table){

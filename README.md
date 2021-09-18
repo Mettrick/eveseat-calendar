@@ -1,6 +1,6 @@
 # eveseat-calendar
-[![Latest Stable Version](https://img.shields.io/packagist/v/kassie/calendar.svg?style=flat-square)](https://packagist.org/packages/kassie/calendar)
-[![Next Version](https://img.shields.io/packagist/vpre/kassie/calendar.svg?style=flat-square)](https://packagist.org/packages/kassie/calendar)
+[![Latest Stable Version](https://img.shields.io/packagist/v/mettrick/calendar.svg?style=flat-square)](https://packagist.org/packages/mettrick/calendar)
+[![Next Version](https://img.shields.io/packagist/vpre/mettrick/calendar.svg?style=flat-square)](https://packagist.org/packages/mettrick/calendar)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)](https://raw.githubusercontent.com/warlof/slackbot/master/LICENSE)
 
 Calendar plugin for EVE SeAT 2.x and 3.x
@@ -12,23 +12,23 @@ Calendar plugin for EVE SeAT 2.x and 3.x
 * Permissions
 
 # Release
-https://packagist.org/packages/kassie/calendar
+https://packagist.org/packages/mettrick/calendar
 
 # Installation
-* `composer require kassie/calendar` in the SeAT root directory
+* `composer require mettrick/calendar` in the SeAT root directory
 * `php artisan vendor:publish --force`
 * `php artisan migrate`
-* `php artisan db:seed --class=Seat\\Kassie\\Calendar\\database\\seeds\\CalendarSettingsTableSeeder`
-* `php artisan db:seed --class=Seat\\Kassie\\Calendar\\database\\seeds\\CalendarTagsSeeder`
-* `php artisan db:seed --class=Seat\\Kassie\\Calendar\\database\\seeds\\ScheduleSeeder`
+* `php artisan db:seed --class=Seat\\Mettrick\\Calendar\\database\\seeds\\CalendarSettingsTableSeeder`
+* `php artisan db:seed --class=Seat\\Mettrick\\Calendar\\database\\seeds\\CalendarTagsSeeder`
+* `php artisan db:seed --class=Seat\\Mettrick\\Calendar\\database\\seeds\\ScheduleSeeder`
 
 ## Since 1.3.2
 Since 1.3.2, the PAP mechanism has been implemented. You need `esi-fleets.read_fleet.v1` into your requested scopes list.
 
 # Feedbacks or support
-@kassie_yvo on eve-seat.slack.com  
-kassie.yvo@gmail.com  
-Kassie Yvo in-game  
+@mettrick_yvo on eve-seat.slack.com  
+mettrick.yvo@gmail.com  
+Mettrick Yvo in-game  
 
 If you like this module, consider giving some ISK, I'm space poor.
 

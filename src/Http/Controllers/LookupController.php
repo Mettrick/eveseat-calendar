@@ -1,18 +1,18 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Seat\Eveapi\Models\Character\CharacterInfo;
-use Seat\Kassie\Calendar\Models\Pap;
+use Seat\Mettrick\Calendar\Models\Pap;
 use Seat\Web\Http\Controllers\Controller;
-use Seat\Kassie\Calendar\Models\Attendee;
+use Seat\Mettrick\Calendar\Models\Attendee;
 
 /**
  * Class LookupController.
  *
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class LookupController extends Controller
 {

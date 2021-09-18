@@ -5,14 +5,14 @@
  * Time: 18:20
  */
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Builder;
-use Seat\Kassie\Calendar\Models\Operation;
+use Seat\Mettrick\Calendar\Models\Operation;
 
 /**
  * Class AjaxController.
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class AjaxController
 {

@@ -16,7 +16,7 @@ class AddAnalytics extends Migration {
 
         });
 
-        Schema::table('kassie_calendar_paps', function(Blueprint $table){
+        Schema::table('mettrick_calendar_paps', function(Blueprint $table){
 
             $table->decimal('value', 5, 2)
                   ->after('ship_type_id')
@@ -33,7 +33,7 @@ class AddAnalytics extends Migration {
 
         });
 
-        Schema::table('kassie_calendar_paps', function(Blueprint $table){
+        Schema::table('mettrick_calendar_paps', function(Blueprint $table){
 
             $table->dropColumn('value');
 

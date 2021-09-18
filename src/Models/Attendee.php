@@ -1,6 +1,6 @@
 <?php
 
-namespace Seat\Kassie\Calendar\Models;
+namespace Seat\Mettrick\Calendar\Models;
 
 use Seat\Eveapi\Models\Character\CharacterInfo;
 use Illuminate\Database\Eloquent\Model;
@@ -9,7 +9,7 @@ use Seat\Web\Models\User;
 /**
  * Class Attendee.
  *
- * @package Seat\Kassie\Calendar\Models
+ * @package Seat\Mettrick\Calendar\Models
  */
 class Attendee extends Model
 {

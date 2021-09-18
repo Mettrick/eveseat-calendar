@@ -5,7 +5,7 @@
  * Time: 11:24
  */
 
-namespace Seat\Kassie\Calendar\Models;
+namespace Seat\Mettrick\Calendar\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Seat\Eveapi\Models\Character\CharacterInfo;
@@ -16,7 +16,7 @@ use Seat\Web\Models\User;
 /**
  * Class Pap.
  *
- * @package Seat\Kassie\Calendar\Models
+ * @package Seat\Mettrick\Calendar\Models
  */
 class Pap extends Model {
 
@@ -33,7 +33,7 @@ class Pap extends Model {
     /**
      * @var string
      */
-    protected $table = 'kassie_calendar_paps';
+    protected $table = 'mettrick_calendar_paps';
 
     /**
      * @var array

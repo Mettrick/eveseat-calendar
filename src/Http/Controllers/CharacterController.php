@@ -5,18 +5,18 @@
  * Time: 14:24
  */
 
-namespace Seat\Kassie\Calendar\Http\Controllers;
+namespace Seat\Mettrick\Calendar\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Seat\Eveapi\Models\Character\CharacterInfo;
 use Seat\Eveapi\Models\Sde\InvType;
-use Seat\Kassie\Calendar\Models\Pap;
+use Seat\Mettrick\Calendar\Models\Pap;
 use Seat\Web\Http\Controllers\Controller;
 
 /**
  * Class CharacterController.
  *
- * @package Seat\Kassie\Calendar\Http\Controllers
+ * @package Seat\Mettrick\Calendar\Http\Controllers
  */
 class CharacterController extends Controller
 {
@@ -35,7 +35,7 @@ class CharacterController extends Controller
             ->get();
 
         $shipTypePaps = InvType::rightJoin('invGroups', 'invGroups.groupID', '=', 'invTypes.groupID')
-            ->leftJoin('kassie_calendar_paps', 'ship_type_id', '=', 'typeID')
+            ->leftJoin('mettrick_calendar_paps', 'ship_type_id', '=', 'typeID')
             ->where('categoryID', 6)
             ->where(function($query) use ($character) {
                 $query->where('character_id', $character->character_id)

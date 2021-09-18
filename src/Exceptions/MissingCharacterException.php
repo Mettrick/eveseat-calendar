@@ -5,14 +5,14 @@
  * Time: 13:54
  */
 
-namespace Seat\Kassie\Calendar\Exceptions;
+namespace Seat\Mettrick\Calendar\Exceptions;
 
 use Exception;
 
 /**
  * Class MissingCharacterException.
  *
- * @package Seat\Kassie\Calendar\Exceptions
+ * @package Seat\Mettrick\Calendar\Exceptions
  */
 class MissingCharacterException extends Exception {
 
