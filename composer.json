@@ -1,5 +1,5 @@
 {
-    "name": "kassie/calendar",
+    "name": "mettrick/calendar",
     "description": "Calendar plugin for SeAT.",
     "type": "seat-plugin",
     "autoload": {
@@ -16,20 +16,14 @@
         "eveseat/eseye": "^2.1",
         "s9e/text-formatter": "^2.4"
     },
-    "authors": [{
-        "name": "Kassie Yvo",
-        "email": "kassie.yvo@gmail.com"
-    }, {
-        "name": "Warlof Tutsimo",
-        "email": "loic.leuilliot@gmail.com"
-    }],
+    "authors": [],
     "license": "GPL-3.0-or-later",
     "minimum-stability": "alpha",
     "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
-                "Seat\\Kassie\\Calendar\\CalendarServiceProvider"
+                "Seat\\Mettrick\\Calendar\\CalendarServiceProvider"
             ]
         }
     }

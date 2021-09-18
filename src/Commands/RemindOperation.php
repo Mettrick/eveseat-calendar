@@ -28,7 +28,7 @@ class RemindOperation extends Command
     /**
      * @var array
      */
-    private $marks = [15, 30, 60];
+    private $marks = [60];
 
     /**
      * Process the command.

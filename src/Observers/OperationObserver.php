@@ -39,7 +39,11 @@ class OperationObserver
                     Notification::send($new_operation, new OperationActivated());
             }
             else {
-                Notification::send($new_operation, new OperationUpdated());
+                if ($old_operation->end_at == null && $new_operation->end_at != null) {
+                }
+                else {
+                    Notification::send($new_operation, new OperationUpdated());
+                }
             }
         }
     }
