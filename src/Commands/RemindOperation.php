@@ -14,7 +14,7 @@ class RemindOperation extends Command
     protected $signature = 'calendar:remind';
     protected $description = 'Check for operation to be reminded on Slack';
 
-    private $marks = [15, 30, 60];
+    private $marks = [60];
 
     public function __construct()
     {
