@@ -35,7 +35,7 @@ class CharacterController extends Controller
             ->get();
 
         $shipTypePaps = InvType::rightJoin('invGroups', 'invGroups.groupID', '=', 'invTypes.groupID')
-            ->leftJoin('mettrick_calendar_paps', 'ship_type_id', '=', 'typeID')
+            ->leftJoin('kassie_calendar_paps', 'ship_type_id', '=', 'typeID')
             ->where('categoryID', 6)
             ->where(function($query) use ($character) {
                 $query->where('character_id', $character->character_id)

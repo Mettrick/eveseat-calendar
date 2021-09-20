@@ -6,7 +6,7 @@
  */
 
 return [
-    'mettrick_calendar_paps' => [
+    'kassie_calendar_paps' => [
         'label'       => 'calendar::permissions.character_paps_label',
         'description' => 'calendar::permissions.character_paps_description',
     ],

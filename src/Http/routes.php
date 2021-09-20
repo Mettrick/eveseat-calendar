@@ -9,7 +9,7 @@ Route::group([
     Route::get('/{character}/paps', [
         'as' => 'character.view.paps',
         'uses' => 'CharacterController@paps',
-        'middleware' => 'can:character.mettrick_calendar_paps,character',
+        'middleware' => 'can:character.kassie_calendar_paps,character',
     ]);
 
 });
@@ -23,19 +23,19 @@ Route::group([
     Route::get('/{corporation}/paps', [
         'as' => 'corporation.view.paps',
         'uses' => 'CorporationController@getPaps',
-        'middleware' => 'can:corporation.mettrick_calendar_paps,corporation',
+        'middleware' => 'can:corporation.kassie_calendar_paps,corporation',
     ]);
 
     Route::get('/{corporation}/paps/json/year', [
         'as' => 'corporation.ajax.paps.year',
         'uses' => 'CorporationController@getYearPapsStats',
-        'middleware' => 'can:corporation.mettrick_calendar_paps,corporation',
+        'middleware' => 'can:corporation.kassie_calendar_paps,corporation',
     ]);
 
     Route::get('/{corporation}/paps/json/stacked', [
         'as' => 'corporation.ajax.paps.stacked',
         'uses' => 'CorporationController@getMonthlyStackedPapsStats',
-        'middleware' => 'can:corporation.mettrick_calendar_paps,corporation',
+        'middleware' => 'can:corporation.kassie_calendar_paps,corporation',
     ]);
 
 });

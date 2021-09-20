@@ -33,7 +33,7 @@ class Pap extends Model {
     /**
      * @var string
      */
-    protected $table = 'mettrick_calendar_paps';
+    protected $table = 'kassie_calendar_paps';
 
     /**
      * @var array

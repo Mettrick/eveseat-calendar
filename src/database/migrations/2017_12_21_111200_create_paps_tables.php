@@ -14,7 +14,7 @@ class CreatePapsTables extends Migration {
 
     public function up()
     {
-        Schema::create('mettrick_calendar_esi_tokens', function(Blueprint $table){
+        Schema::create('kassie_calendar_esi_tokens', function(Blueprint $table){
 
             $table->bigInteger('character_id');
             $table->string('scopes');
@@ -27,7 +27,7 @@ class CreatePapsTables extends Migration {
 
         });
 
-        Schema::create('mettrick_calendar_paps', function(Blueprint $table){
+        Schema::create('kassie_calendar_paps', function(Blueprint $table){
 
             $table->integer('operation_id');
             $table->bigInteger('character_id');
@@ -48,8 +48,8 @@ class CreatePapsTables extends Migration {
 
     public function down()
     {
-        Schema::dropIfExists('mettrick_calendar_paps');
-        Schema::dropIfExists('mettrick_calendar_esi_tokens');
+        Schema::dropIfExists('kassie_calendar_paps');
+        Schema::dropIfExists('kassie_calendar_esi_tokens');
     }
 
 }
